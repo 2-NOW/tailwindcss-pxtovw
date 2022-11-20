@@ -4,7 +4,7 @@
   "description": "tailwindcss plugin convert dynamic classess from px to vw",
   "main": "index.js",
   "repository": "https://github.com/2-NOW/tailwindcss-pxtovw.git",
-  "author": "2-NOW <kj109888@gmail.com>",
+  "author": "2-NOW",
   "license": "MIT",
   "dependencies": {
     "tailwindcss": "^3.2.4"
