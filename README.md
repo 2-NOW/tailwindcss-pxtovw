@@ -13,13 +13,13 @@ yarn add tailwindcss-pxtovw
 ```js
 const pxtovw = require('@tailwindcss-pxtovw');
 
-module.exports  =  {
-    content:  ["./src/**/*.{html,js}"],
-    theme:  {
-        extend:  {},
-    },
-    // add here a plugin and configuration
-    plugins:  [pxtovw({ default: 480, tablet: 768, desktop: 1024 })],
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+      extend: {},
+  },
+  // add here a plugin and configuration
+  plugins: [pxtovw({ default: 480, tablet: 768, desktop: 1024 })],
 }
 ```
 
@@ -32,6 +32,6 @@ For, example:
 
 ```html
 <div class="@pv:m-[16px]">Hello World!</div> // convert 16px to vw. divide by 480
-<div class="tablet@pv@:m-[16px]">Hello World!</div> // convert 16px to vw. divide by 768
+<div class="tablet@pv:m-[16px]">Hello World!</div> // convert 16px to vw. divide by 768
 <div class="desktop@pv:m-[16px]">Hello World!</div> // convert 16px to vw. divide by 1024
 ```
